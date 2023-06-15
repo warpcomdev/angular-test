@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, inject } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+
+import { AuthFacade } from '../libs/core/auth';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: ` <router-outlet /> `,
+  encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {
-  title = 'angular-test';
+export class AppComponent implements OnInit {
+  private readonly authFacade = inject(AuthFacade);
+
+  ngOnInit(): void {
+    this.authFacade.init();
+  }
 }
