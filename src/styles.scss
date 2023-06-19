@@ -3,3 +3,123 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,400&family=Roboto:wght@100;400;500;700;900&display=swap");
+
+body {
+	background-color: #00374d;
+}
+
+input {
+	width: 228px;
+	font-family: "Lato", sans-serif !important;
+	padding: 8px;
+	font-weight: 800 !important;
+	font-size: 16px !important;
+	line-height: 19px !important;
+	border-bottom: 2px solid #6dcad9 !important;
+	background: transparent !important;
+	color: #c9eff4;
+	box-sizing: border-box !important;
+	&:focus {
+		background-color: transparent !important;
+		color: #c9eff4 !important;
+		box-sizing: border-box !important;
+		outline: none;
+		box-shadow: none;
+	}
+}
+
+input::placeholder {
+	color: #c9eff4;
+}
+
+.logo {
+	margin-bottom: 50px;
+}
+
+.input-wrapper {
+	position: relative;
+	width: 228px;
+}
+
+.input .password {
+	padding: 15px 35px 15px 15px;
+}
+
+.input-icon {
+	cursor: pointer;
+	color: #191919;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.input-icon.password {
+	left: unset;
+	right: 12px;
+}
+
+.btn-login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 79px;
+	height: 32px;
+	padding: 4px, 8px, 4px, 8px;
+	background-color: #6dcad9;
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 19px;
+	gap: 4px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.term {
+	color: white;
+	margin-left: 48px;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.separador {
+	margin: 0px 8px;
+	color: white;
+}
+
+.menu {
+	color: white;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.disabled-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 79px;
+	height: 32px;
+	padding: 4px, 8px, 4px, 8px;
+	background-color: #afe8ef;
+	color: #707476 !important;
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 19px;
+	gap: 4px;
+	text-align: center;
+	cursor: pointer;
+}
