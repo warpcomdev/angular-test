@@ -9,6 +9,7 @@ import { AuthModule } from '../libs/core/auth';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EffectsModule } from '@ngrx/effects';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +20,7 @@ import { EffectsModule } from '@ngrx/effects';
     AuthModule,
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     EffectsModule.forRoot([]),
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,126 @@
+<div class="flex min-h-full flex-col  px-6 pt-0 lg:px-8 bg-[#00374D] h-screen" >
+
+    <div class="flex sm:mx-auto sm:w-full sm:max-w-sm  justify-center pt-71.68">
+        <img src="/assets/URBO Logologo.png" alt="" class="w-199 h-99">
+    </div>
+
+   <!--  <div class="flex   justify-center pt-top-junta  " *ngIf="desplegable">
+        <div class="flex w-width-c-junta h-heigth-c-junta bg-white rounded-lg">
+            <img src="/assets/image1.png" alt="" class="mx-auto w-width-junta h-heigth-junta ">
+        </div>
+        
+        <span class="pl-2 text-secondary-color font-roboto text-sm" >
+            Junta de Castilla y Leon 
+        </span>
+
+        <button class="pl-4">
+           <img src="/assets/Polygon 3.svg" alt="">
+        </button>
+ 
+    </div>  -->
+
+    <div class="flex justify-center mt-top-form sm:mx-auto sm:w-full sm:max-w-sm ">
+      <form class="space-y-6 w-form-width justify-center" (ngSubmit)="login()">
+        <div>
+          <div class="border-b-2 border-[#6DCAD9]">
+            <input
+              name="username"
+              type="text"
+              [(ngModel)]="username"      
+              class="peer  py-1.5  my-2 mx-3  w-full  bg-transparent pt-4 pb-1.5  text-xs font-lato  text-urbo-luminance-06 outline outline-0 transition-all placeholder-shown:border-[#6DCAD9] focus:border-[#6DCAD9] focus:outline-0 disabled:border-0 disabled:bg-[#6DCAD9]" placeholder="usuario"
+            />
+          </div>
+        </div>
+
+        <div>
+          <div class="mt-6.5 flex  border-b-2 border-[#6DCAD9] ">
+            <input
+              name="password"
+              type="password"
+              [(ngModel)]="password"
+              class="peer  py-1.5  my-2 mx-3  w-full  bg-transparent pt-4 pb-1.5  text-xs font-lato  text-urbo-luminance-06 outline outline-0 transition-all placeholder-shown:border-[#6DCAD9] focus:border-[#6DCAD9] focus:outline-0 disabled:border-0 disabled:bg-[#6DCAD9]" placeholder="contraseña"
+            />
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-6">
+                <g id="Ojo">
+                <path id="Vector" d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" stroke="#C9EFF4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Combined Shape" d="M21 12C19.1114 14.991 15.7183 18 12 18C8.2817 18 4.88856 14.991 3 12C5.29855 9.15825 7.99163 6 12 6C16.0084 6 18.7015 9.1582 21 12Z" stroke="#C9EFF4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+            <div class="border-b-2 border-[#6DCAD9]">
+              <input
+                name="service"
+                type="text"
+                [(ngModel)]="service"      
+                class="peer  py-1.5  my-2 mx-3  w-full  bg-transparent pt-4 pb-1.5  text-xs font-lato  text-urbo-luminance-06 outline outline-0 transition-all placeholder-shown:border-[#6DCAD9] focus:border-[#6DCAD9] focus:outline-0 disabled:border-0 disabled:bg-[#6DCAD9]" placeholder="servicio"
+              />
+            </div>
+          </div>
+
+        <div class="flex  justify-between items-center mt-5.5">
+            <div class="flex self-start mx-2 my-1.5">
+                <img src="/assets/SpainBandera.svg" alt="" class="mr-2">
+                <img src="/assets/Polygon 3.svg" alt="">
+            </div>
+            <div class="self-end">
+                <button type="submit" class="middle none center rounded-lg bg-button-color  text-xs font-bold font-lato text-black shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none
+                 active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-button-width h-button-heigth">
+                   <span px-3 py-2>
+                    > Acceder
+                   </span>
+                </button>
+            </div>
+        </div>
+      </form>
+
+    </div>
+
+    <div class="flex   justify-center mt-16 ">
+        <img src="assets/LOGOTELEFONICA.png" alt="">
+    </div>
+
+    <footer class="flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 border-blue-gray-50 py-6 text-center md:justify-between mt-auto">
+        <p class="flex block  text-base font-roboto  leading-relaxed text-white text-xs antialiased">
+         
+          <img src="/assets/LOGOTELEFONICA2.svg" alt="" class="mr-8">
+          <span class="my-auto">
+            Urbo (2.16.1 45c9eac) © Telefónica S.A. 2023
+          </span>
+        </p>
+        <ul class="flex flex-wrap items-center  ">
+          <li>
+            <a
+              href="#"
+              class="block  font-roboto text-xs text-base border-r-2 px-2 border-white leading-relaxed text-white antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
+            >
+              Términos y condiciones
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block font-roboto text-xs text-base font-normal border-r-2 px-2 border-white leading-relaxed text-white antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
+            >
+            Política de cookies
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block font-roboto text-xs text-base font-normal px-2 leading-relaxed text-white antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
+            >
+            Aviso Legal
+            </a>
+          </li>
+          
+        </ul>
+      </footer>
+
+  </div>
+
+  <!-- <pre>{{ user() | json }}</pre> -->
+
+  
