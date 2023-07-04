@@ -1,9 +1,10 @@
-import { Component, inject, ViewEncapsulation } from '@angular/core';
-import { JsonPipe } from '@angular/common';
-import { RouterLink } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { Component, inject, OnInit, ViewEncapsulation } from "@angular/core";
+import { CommonModule, JsonPipe } from "@angular/common";
+import { RouterLink } from "@angular/router";
+import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from "@angular/forms";
+import { MatInputModule } from "@angular/material/input";
 
-import { AuthFacade } from '../../core/auth';
+import { AuthFacade } from "../../core/auth";
 
 @Component({
   standalone: true,
